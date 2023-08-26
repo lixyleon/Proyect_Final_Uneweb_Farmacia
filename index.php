@@ -12,7 +12,7 @@
           <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" width="100" height="400" alt="...">
         <?php
         }
-      
+
         ?>
       </div>
       <div class="col-md-8 gradient">
@@ -50,15 +50,15 @@
       <div class="col">
         <div class="card h-100">
           <div class="card-container">
-          <?php
-        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 13 ");
-        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
-        foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
-        <?php
-        }
-      
-        ?>
+            <?php
+            $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 13 ");
+            $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+            foreach ($filas as $fila) { ?>
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+            <?php
+            }
+
+            ?>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center fs-3"><?php echo $fila->title;  ?></h5>
@@ -73,15 +73,15 @@
       <div class="col">
         <div class="card h-100">
           <div class="card-container">
-          <?php
-        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 14 ");
-        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
-        foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
-        <?php
-        }
-      
-        ?>
+            <?php
+            $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 14 ");
+            $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+            foreach ($filas as $fila) { ?>
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+            <?php
+            }
+
+            ?>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center fs-3">Crema Ponds</h5>
@@ -97,15 +97,15 @@
       <div class="col">
         <div class="card h-100">
           <div class="card-container">
-          <?php
-        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 15 ");
-        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
-        foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
-        <?php
-        }
-      
-        ?>
+            <?php
+            $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 15 ");
+            $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+            foreach ($filas as $fila) { ?>
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+            <?php
+            }
+
+            ?>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center fs-3">Pañal</h5>
@@ -122,15 +122,15 @@
       <div class="col">
         <div class="card h-100">
           <div class="card-container">
-          <?php
-        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 16 ");
-        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
-        foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2 " alt="...">
-        <?php
-        }
-      
-        ?>
+            <?php
+            $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 16 ");
+            $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+            foreach ($filas as $fila) { ?>
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2 " alt="...">
+            <?php
+            }
+
+            ?>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center fs-3">Protector</h5>
@@ -147,15 +147,15 @@
       <div class="col">
         <div class="card h-100">
           <div class="card-container">
-          <?php
-        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 17 ");
-        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
-        foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2 " alt="...">
-        <?php
-        }
-      
-        ?>
+            <?php
+            $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 17 ");
+            $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+            foreach ($filas as $fila) { ?>
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2 " alt="...">
+            <?php
+            }
+
+            ?>
           </div>
 
           <div class="card-body">
@@ -173,15 +173,15 @@
       <div class="col">
         <div class="card h-100">
           <div class="card-container">
-          <?php
-        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 18 ");
-        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
-        foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" width="100" height="400" alt="...">
-        <?php
-        }
-      
-        ?>
+            <?php
+            $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 18 ");
+            $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+            foreach ($filas as $fila) { ?>
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" width="100" height="400" alt="...">
+            <?php
+            }
+
+            ?>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center fs-3">Equipos médicos</h5>
@@ -247,7 +247,11 @@
         <div class="col-md-3">
           <div class="card h-100">
             <div class="card-body">
-              <img src="imagenes/Doctor_Medical_Instrument_Stethoscope_icon-icons.com_65902.svg" width="50" height="50" class="bi bi-heart-pulse img-fluid mb-3 text-primary" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class=class="bi bi-heart-pulse img-fluid mb-3 text-primary" viewBox="0 0 16 16">
+                <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2V6Z" />
+                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1V1Zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4H4ZM3 3h10V1H3v2Z" />
+              </svg>
+
               <h3>Equipos médicos</h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
               <button type="button" class="btn btn-primary">
