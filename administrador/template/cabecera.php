@@ -17,7 +17,7 @@ if (empty($_SESSION['usuario'])) {
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <?php
-$url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyect_Final_Uneweb_Farmacia"
+$url = "http://" . $_SERVER['HTTP_HOST'] . "/proyectfinalunewebfarmacia.000webhostapp.com"
 ?>
 
 <nav class="navbar navbar-dark bg-dark fixed-top">
