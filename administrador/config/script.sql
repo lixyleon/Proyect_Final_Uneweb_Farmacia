@@ -28,7 +28,7 @@ CREATE TABLE proveedores (id INT AUTO_INCREMENT PRIMARY KEY,
 nombre VARCHAR(40),
 apellido VARCHAR(40),
 telefono VARCHAR(20),
-id_tipo_persona INT,
+id_tipo_peronsa INT,
 num_identificacion INT,
 FOREIGN KEY (id_tipo_peronsa)REFERENCES tipo_persona(id)
 );
