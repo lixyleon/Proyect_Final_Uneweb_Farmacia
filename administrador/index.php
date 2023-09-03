@@ -1,11 +1,6 @@
-<?php
-if ($_POST) {
-    header("location:inicio.php");
-}
-?>
-<?php include("config/bd.php"); 
+<?php include("config/bd.php");
 
-$url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
+$url = "https://farmasaludpro.000webhostapp.com"
 ?>
 <!doctype html>
 <html lang="es">
@@ -31,22 +26,17 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
         <div class="text-center fs-1 fw-bold">FarmaSalud</div>
         <div class="input-group m-4">
             <form action="iniciarSesion.php" method="POST">
-                <?php
-                if (isset($_GET['error'])) {
-                ?>
-                    <p class="error">
-                        <?php echo $_GET['error'] ?>
-                    </p>
-                <?php   } ?>
+            <?php
+            if(isset($_GET['error'])){?>
+                <div class="alert alert-danger">
+                <?php echo $_GET['error'] ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <?php }?>
+            
+            
+            
 
-                <?php
-                if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta') {
-                ?>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong>Error</strong> Debes colocar todos los datos
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                <?php  } ?>
                 <div class="input-group mt-4 ">
                     <div class="input-group-text bg-dark">
                         <img src="../imagenes/username-icon.svg" alt="username-icon" style="height: 1rem" />
@@ -60,9 +50,9 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                     <input type="password" id="clave" name="clave" placeholder="Ingrese contraseña" class="form-control bg-light">
                 </div>
                 <div class="input-group-append d-flex text-black">
-                        <button id="show_password" class="btn " type="button" onclick="mostrarPassword()"> <span class="bi bi-eye-fill"></span> </button>
-                        <p class="m-1">Ver contraseña</p>
-                    </div>
+                    <button id="show_password" class="btn " type="button" onclick="mostrarPassword()"> <span class="bi bi-eye-fill"></span> </button>
+                    <p class="m-1">Ver contraseña</p>
+                </div>
                 <div class="">
                     <input type="submit" value="Iniciar sesión" class="btn btn-dark text-white  w-100 mt-4 fw-semibold shadow-sm">
 
@@ -72,7 +62,7 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                 <button type="button" class="btn btn-danger mt-4 w-100">
                     <a class="text-light " href="<?php echo $url; ?> ">Ver Sitio Web</a>
                 </button>
-                    
+
             </div>
         </div>
     </div>
@@ -81,18 +71,17 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
 
 
     <script type="text/javascript">
-function mostrarPassword(){
-		var cambio = document.getElementById("clave");
-		if(cambio.type == "password"){
-			cambio.type = "text";
-			$('.icon').removeClass('bi bi-eye-fill').addClass('bi bi-eye');
-		}else{
-			cambio.type = "password";
-			$('.icon').removeClass('bi bi-eye-fill').addClass('bi bi-eye-fill');
-		}
-	} 
-	
-	</script>
+        function mostrarPassword() {
+            var cambio = document.getElementById("clave");
+            if (cambio.type == "password") {
+                cambio.type = "text";
+                $('.icon').removeClass('bi bi-eye-fill').addClass('bi bi-eye');
+            } else {
+                cambio.type = "password";
+                $('.icon').removeClass('bi bi-eye-fill').addClass('bi bi-eye-fill');
+            }
+        }
+    </script>
 
 
 
@@ -103,13 +92,13 @@ function mostrarPassword(){
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-</script>
-<script src="bottom-login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="bottom-login.js"></script>
 
 </body>
 
