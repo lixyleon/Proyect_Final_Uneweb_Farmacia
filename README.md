@@ -1,19 +1,15 @@
 # Proyect_Final_Uneweb_Farmacia
 
-
 Additional description about the project and its features.
 Built With
 
-    Major languages
-    Frameworks
-    Technologies used
-
-Live Demo
+    PHP
+    Boostrap
+    JavaScript
 
 Live Demo Link
-Getting Started
 
-This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
+[Demo link FarmaSalud](https://farmasaludpro.000webhostapp.com)
 
 To get a local copy up and running follow these simple example steps.
 Prerequisites
@@ -22,10 +18,9 @@ Install
 Usage
 Run tests
 Deployment
+
 Authors
-
 👤 Lixy Leon
-
     GitHub: @lixyleon
 
 🤝 Contributing
@@ -38,9 +33,7 @@ Show your support
 Give a ⭐️ if you like this project!
 Acknowledgments
 
-    Hat tip to anyone whose code was used
-    Inspiration
-    etc
+   You learn by making mistakes, there are no shortcuts.
 
 📝 License
 
