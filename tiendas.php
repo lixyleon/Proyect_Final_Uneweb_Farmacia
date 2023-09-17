@@ -9,7 +9,7 @@
         $sentencia1 = $conexion->query("SELECT * FROM ofertas WHERE id = 19 ");
         $filas = $sentencia1->fetchAll(PDO::FETCH_OBJ);
         foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" width="100" height="400" alt="...">
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class=" m-2" width="95%" height="400" alt="La florida">
         <?php
         }
       
@@ -26,7 +26,7 @@
         $sentencia1 = $conexion->query("SELECT * FROM ofertas WHERE id = 21 ");
         $filas = $sentencia1->fetchAll(PDO::FETCH_OBJ);
         foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" width="100" height="400" alt="...">
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class=" m-2" width="95%" height="400" alt="Altamira">
         <?php
         }
       
@@ -43,7 +43,7 @@
         $sentencia1 = $conexion->query("SELECT * FROM ofertas WHERE id = 20 ");
         $filas = $sentencia1->fetchAll(PDO::FETCH_OBJ);
         foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" width="100" height="400" alt="...">
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class=" m-2" width="95%" height="425" alt="Los Chaguaramos">
         <?php
         }
       
