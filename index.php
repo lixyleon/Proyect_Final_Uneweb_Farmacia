@@ -54,7 +54,7 @@
             $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 13 ");
             $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
             foreach ($filas as $fila) { ?>
-              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class=" m-2" width="80%" alt="...">
             <?php
             }
 
@@ -77,7 +77,7 @@
             $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 14 ");
             $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
             foreach ($filas as $fila) { ?>
-              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="m-2" width="80%" alt="...">
             <?php
             }
 
@@ -101,7 +101,7 @@
             $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 15 ");
             $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
             foreach ($filas as $fila) { ?>
-              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="m-2" width="80%" alt="...">
             <?php
             }
 
@@ -126,7 +126,7 @@
             $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 16 ");
             $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
             foreach ($filas as $fila) { ?>
-              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2 " alt="...">
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="m-2" width="80%" alt="...">
             <?php
             }
 
@@ -151,7 +151,7 @@
             $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 17 ");
             $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
             foreach ($filas as $fila) { ?>
-              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2 " alt="...">
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="m-2" width="80%" alt="...">
             <?php
             }
 
@@ -177,7 +177,7 @@
             $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 18 ");
             $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
             foreach ($filas as $fila) { ?>
-              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" width="100" height="400" alt="...">
+              <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="m-2" width="80%" width="100" height="400" alt="...">
             <?php
             }
 
